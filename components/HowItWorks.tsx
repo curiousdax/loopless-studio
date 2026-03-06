@@ -8,37 +8,42 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section
-      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
+      className="px-5 md:px-16 lg:px-24 py-20 md:py-32"
       style={{ borderTop: "1px solid var(--border)" }}
     >
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-        <div className="lg:w-64 shrink-0">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-32">
+        <div className="lg:w-56 shrink-0">
           <span className="font-mono text-xs uppercase tracking-widest" style={{ color: "var(--dim)" }}>
             How it works
           </span>
         </div>
         <div className="flex-1">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-16" style={{ color: "var(--cream)" }}>
-            Simple process. Real output.
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-16 md:mb-20" style={{ color: "var(--cream)" }}>
+            Simple process.<br className="hidden md:block" /> Real output.
           </h2>
           <div>
             {steps.map((step, i) => (
               <div
                 key={step.n}
-                className="flex items-start gap-8 py-8"
+                className="flex items-start gap-8 md:gap-12 py-8 md:py-10"
                 style={{
                   borderTop: i === 0 ? "1px solid var(--border)" : undefined,
                   borderBottom: "1px solid var(--border)",
                 }}
               >
-                <span className="font-mono text-4xl font-bold shrink-0 w-16" style={{ color: "var(--border)" }}>
+                <span
+                  className="font-bold shrink-0 w-16 md:w-20"
+                  style={{ fontFamily: "var(--font-anton)", color: "var(--border)", fontSize: "clamp(2rem, 5vw, 3.5rem)", lineHeight: 1 }}
+                >
                   {step.n}
                 </span>
                 <div className="pt-1">
-                  <h3 className="font-bold text-lg mb-1" style={{ color: "var(--cream)" }}>
+                  <h3 className="font-bold text-lg mb-2" style={{ color: "var(--cream)" }}>
                     {step.title}
                   </h3>
-                  <p style={{ color: "var(--dim)" }}>{step.desc}</p>
+                  <p className="text-base leading-relaxed" style={{ color: "var(--dim)" }}>
+                    {step.desc}
+                  </p>
                 </div>
               </div>
             ))}

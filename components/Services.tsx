@@ -11,41 +11,41 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
+      className="px-5 md:px-16 lg:px-24 py-20 md:py-32"
       style={{ borderTop: "1px solid var(--border)" }}
     >
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-        <div className="lg:w-64 shrink-0">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-32">
+        <div className="lg:w-56 shrink-0">
           <span className="font-mono text-xs uppercase tracking-widest" style={{ color: "var(--dim)" }}>
             What I offer
           </span>
         </div>
         <div className="flex-1">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4" style={{ color: "var(--cream)" }}>
-            Fixed scope. Fast. No surprises.
+            Fixed scope.<br className="hidden md:block" /> Fast. No surprises.
           </h2>
-          <p className="mb-16 text-lg" style={{ color: "var(--dim)" }}>
+          <p className="text-base md:text-lg mb-12 md:mb-16" style={{ color: "var(--dim)" }}>
             Every engagement ends with something real your team can use.
           </p>
           <div className="grid sm:grid-cols-2 gap-px" style={{ background: "var(--border)" }}>
             {services.map((s) => (
               <div
                 key={s.title}
-                className="p-8 group cursor-default transition-colors hover:bg-[var(--card)]"
+                className="p-7 md:p-9"
                 style={{ background: "var(--bg)" }}
               >
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-lg font-bold" style={{ color: "var(--cream)" }}>
+                <div className="flex items-start justify-between mb-4 gap-4">
+                  <h3 className="text-lg font-bold leading-tight" style={{ color: "var(--cream)" }}>
                     {s.title}
                   </h3>
                   <span
-                    className="font-mono text-xs ml-4 shrink-0 px-2 py-1 rounded"
+                    className="font-mono text-xs shrink-0 px-2.5 py-1 rounded whitespace-nowrap"
                     style={{ color: "var(--yellow)", background: "rgba(218,255,0,0.08)" }}
                   >
                     {s.tag}
                   </span>
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--dim)" }}>
+                <p className="text-sm md:text-base leading-relaxed" style={{ color: "var(--dim)" }}>
                   {s.desc}
                 </p>
               </div>
