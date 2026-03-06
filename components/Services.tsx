@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="px-6 md:px-16 lg:px-24 py-24"
+      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -21,7 +21,7 @@ export default function Services() {
           </span>
         </div>
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4" style={{ color: "var(--cream)" }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4" style={{ color: "var(--cream)" }}>
             Fixed scope. Fast. No surprises.
           </h2>
           <p className="mb-16 text-lg" style={{ color: "var(--dim)" }}>

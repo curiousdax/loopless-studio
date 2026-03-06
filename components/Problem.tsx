@@ -19,7 +19,7 @@ const items = [
 export default function Problem() {
   return (
     <section
-      className="px-6 md:px-16 lg:px-24 py-24"
+      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -35,7 +35,7 @@ export default function Problem() {
 
         {/* Right content */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-16" style={{ color: "var(--cream)" }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-16" style={{ color: "var(--cream)" }}>
             You need UX. You don't need a headcount.
           </h2>
           <div className="space-y-0">

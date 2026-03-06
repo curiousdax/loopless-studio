@@ -2,7 +2,7 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="px-6 md:px-16 lg:px-24 py-24"
+      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="max-w-3xl">
@@ -10,7 +10,7 @@ export default function CTA() {
           Get in touch
         </span>
         <h2
-          className="text-5xl md:text-7xl font-extrabold leading-tight mt-6 mb-10"
+          className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mt-6 mb-10"
           style={{ color: "var(--cream)" }}
         >
           Let's figure out if I can help.

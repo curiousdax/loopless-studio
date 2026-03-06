@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      className="px-6 md:px-16 lg:px-24 py-24"
+      className="px-5 md:px-16 lg:px-24 py-16 md:py-24"
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className="flex-1 grid lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-4xl font-bold mb-8" style={{ color: "var(--cream)" }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8" style={{ color: "var(--cream)" }}>
               Antonija Pek
             </h2>
             <div className="space-y-4" style={{ color: "var(--dim)" }}>
